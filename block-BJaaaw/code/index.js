@@ -149,3 +149,15 @@ else if(marks>0)
   - If`freezing` alert`Get your sweeter on`
   - Anything else should alert`Not a valid input`
 */
+let month=prompt('enter month')
+switch(month) {
+  case"1":
+    console.log ("print janaury")    
+    break;
+  case "2" :
+    console.log ("print feb ")
+    break;
+  default:
+    console.log (" print march")
+}
+
