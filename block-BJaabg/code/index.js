@@ -16,3 +16,20 @@ var amount = 0;
 // your code goes here
 
 // ⛑ Answer of the above will `$334.76`.
+
+var bank_balance = 303.91;
+var amount = 0;
+const PHONE_PRICE = 99.99;
+
+while ( bank_balance<0) {
+    
+    if (bank_balance/PHONE_PRICE){
+        amount=amount+1        
+
+    }
+    else{
+        console.log('no balance')
+    }
+    
+}
+
