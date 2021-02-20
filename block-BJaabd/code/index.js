@@ -10,6 +10,31 @@ Write a program that asks the user his/her age and check for the following condi
 - `if` the age is greater than 55 then print the message " You are too old to participate in the marthon".
 👇
 */
+let age=prompt('your age')
+if (!age){ 
+  alert('not entered age')
+}
+if (age>=12 || age<=55  ) {
+  console.log("You can participate in the marathon")
+} 
+else if(age>=4 || age<=11  ) {
+  console.log("You are too young to participate in the marathon")
+
+
+}
+else if(age<4 ) {
+  console.log(" Hey Kiddo! Can You Walk ?")
+
+
+}
+else if(age>55 ) {
+  console.log("You are too young to participate in the marathon")
+
+
+}
+
+  
+
 
 // Loops
 /*
@@ -21,12 +46,42 @@ n = 7 => output: heeeeeeello
 👇
 */
 // [Your code goes here]
+let num=promt('string')
 
+
+
+  let num = prompt("Enter n value");
+
+num = parseInt(num);
+
+let e = "";
+
+for (let i = 1; num >= i; i--) {
+  e += "e";
+}
+
+alert(`H${e}llo`);
 /*
+
+
+
 Program to calculate the sum of first n natural numbers(1,2,3...n are known as natural numbers). Prompt user to enter n (using `prompt`) then based on input provided calculate and show result in `alert`.
 👇
 */
 // [Your code goes here]
+let x=prompt('sum')
+
+ x = parseInt(x);
+ 
+let result=0
+
+ for (let i = 1; x >= i; i++) {
+   result=result+i;
+ }
+ 
+ alert(result);
+ /*
+ 
 
 /* Switch Statement
 
@@ -47,6 +102,27 @@ Take a number value from user and alert the message if it matches the conditions
 */
 // [Your code goes here]
 
+let x=prompt('number value')
+
+x = parseInt(x);
+
+
+switch(x) {
+  case 1:
+    // code block
+    console.log ('number is equal to 1')
+
+    break;
+  case 2:
+    // code block
+    console.log ('number is equal to 2')
+
+     break;
+  default:
+    console.log('wrong input')
+    // code block
+}
+
 /*
 🎖Using switch statement do the following
 
@@ -63,15 +139,72 @@ Take the value of `marks` (0-100) from user using `prompt` and `alert` the messa
 
 // [Your code goes here]
 
+let marks=prompt('grading value')
+
+
+
+switch(marks) {
+  case 'AA':
+    // code block
+    console.log ('`marks` is greater than 90')
+
+    break;
+  case 'BB':
+    // code block
+    console.log ('`marks` is greater than 80')
+
+     break;
+  default:
+    console.log('wrong input')
+    // code block
+}
+
 /*
  🎖Write a JavaScript program that takes two `integers` from user (using prompt) and alerts the larger number.
 */
 // [your code goes here]
 
+let x=prompt('number value1')
+let y=prompt('number value2')
+
+x = parseInt(x);
+y = parseInt(y);
+
+if (x>y) {
+  console.log ('x isgreat')
+  
+} 
+else if (x==y)
+ {
+  console.log('x =y both are equal')
+  
+}
+
+else {
+  console.log('y is greater')
+  
+}
+
 /*
 🎖Write a JavaScript conditional statement to find the sign (+, -) of product of three numbers. Take those three numbers from user using `prompt`. Display an alert box with the specified sign.
 */
 // [Your code goes here]
+let x=prompt('x1')
+let y=prompt('y1')
+let z=prompt('z1')
+
+if (x>0) {
+  console.log ('x is positive')
+  
+} 
+else {
+  console.log('x is negative')
+  
+}
+
+// copy y and z do same
+
+
 
 /* Calculator
  🎖Make a simple calculator with these functions. Using prompt, type conversion, if else statement. Use prompt to take the input from user i.e two numbers and an operation (Add, Sub, Mul, Div).
@@ -86,3 +219,23 @@ Take the value of `marks` (0-100) from user using `prompt` and `alert` the messa
 */
 
 // [Your code goes here]
+
+let x=prompt('x1')
+let y=prompt('y1')
+
+x = parseInt(x);
+y = parseInt(y);
+
+alert(x+y)
+alert(x*y)
+ 
+
+
+if (x>y) {
+  console.log( x-y)
+  console.log( x/y)
+} else  {
+  alert('wrong input')
+
+}
+
